@@ -90,6 +90,10 @@
   font-weight: 700;
 }
 
+.cta-button:hover {
+  cursor: pointer;
+}
+
 /*@ AFFICHAGE TABLETTE*/
 @media (max-width: 1024px) {
 
@@ -239,6 +243,7 @@
   background-color: rgba(239, 225, 216, 0.4);
   font-size: larger;
   padding: 5px;
+  z-index: 20;
 }
 
 .text-input {
