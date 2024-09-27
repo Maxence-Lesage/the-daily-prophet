@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Red+Rose:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Red+Rose:wght@300..700&family=RocknRoll+One&display=swap');
+
+.header-informations {
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.header-informations-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/*--------------------------*/
+
+.header-informations-wanted {
+  border: 5px black solid;
+  flex-wrap: wrap;
+  width: fit-content;
+  height: fit-content;
+}
+
+.header-informations-wanted-wrapper {
+  position: relative;
+  border: 4px white solid;
+  background-color: black;
+  padding: 10px 10px;
+  color: white;
+}
+
+.wanted-prime {
+  font-family: "Rampart One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7vw;
+  letter-spacing: -15px;
+  margin-top: -10px;
+}
+
+.wanted-currency {
+  transform: rotate(-90deg);
+  font-family: "Red Rose", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7vw;
+  margin-left: -10px;
+}
+
+.wanted-desc {
+  font-family: "RocknRoll One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5vw;
+  margin-left: -15px;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 1050px) {
+  .wanted-prime {
+    letter-spacing: -7px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header-informations-wanted-wrapper {
+    width: 100%;
+  }
+
+  .wanted-prime {
+    font-size: 60px;
+  }
+
+  .wanted-currency {
+    font-size: 18px;
+    margin-left: -10px;
+  }
+
+  .wanted-desc {
+    font-size: 28px;
+    margin-left: -15px;
+  }
+}
+
+/*--------------------------*/
+
+.header-informations-container {
+  flex-grow: 1;
+}
+
+/*--------------------------*/
+
+.header-informations-weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-informations-weather-info {
+  display: flex;
+  gap: 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/*--------------------------*/
+
+.header-informations-zodiaq {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-informations-zodiaq-info {
+  font-size: 1.3rem;
+  font-weight: 700;
+}

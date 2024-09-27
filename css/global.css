@@ -1,0 +1,51 @@
+/*
+  --media-mobile-small: 640px;
+  --media-mobile-medium: 768px;
+  --media-tablet: 1024px;
+  --media-computer-small: 1280px;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Red+Rose:wght@300..700&family=RocknRoll+One&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+  font-size: 16px;
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  background-color: rgb(249, 231, 193);
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  background-image: url("../img/paper-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.padding-y {
+  padding: 20px 0;
+}
