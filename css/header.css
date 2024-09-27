@@ -20,6 +20,7 @@
   flex-wrap: wrap;
   width: fit-content;
   height: fit-content;
+  min-width: 323px;
 }
 
 .header-informations-wanted-wrapper {
@@ -58,6 +59,20 @@
   text-wrap: nowrap;
 }
 
+@media (min-width: 1440px) {
+  .wanted-prime {
+    font-size: 100px;
+  }
+
+  .wanted-currency {
+    font-size: 30px;
+  }
+
+  .wanted-desc {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 1050px) {
   .wanted-prime {
     letter-spacing: -7px;
@@ -80,7 +95,7 @@
   }
 
   .wanted-desc {
-    font-size: 28px;
+    font-size: 4vw;
     margin-left: -15px;
   }
 }
@@ -88,7 +103,15 @@
 /*--------------------------*/
 
 .header-informations-container {
+  display: flex;
+  gap: 20px;
   flex-grow: 1;
+}
+
+@media (max-width: 590px) {
+  .header-informations-container {
+    flex-direction: column;
+  }
 }
 
 /*--------------------------*/
